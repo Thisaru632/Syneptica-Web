@@ -3,11 +3,11 @@
 export const ABOUT_SECTIONS = [
   {
     id: "spark",
-    title: "The Spark Behind Zevaro",
+    title: "The Spark Behind Synaptica",
     image: "/api/placeholder/500/400",
     description: [
-      "Every great brand begins with a dream. For us, it was two friends, two engineers, and one vision – to transform the way garments are made in Sri Lanka.",
-      "Founded by graduates of the University of Moratuwa, Zevaro was born out of the belief that fashion should not only look good, but also do good – for people, communities, and the planet."
+      "Every great product begins with a problem worth solving. For us, it was helping businesses turn complex challenges into elegant, scalable digital solutions.",
+      "Founded by passionate engineers and product builders, Synaptica was created to deliver high-impact software with craftsmanship, empathy, and a relentless focus on user value."
     ],
     reverse: false,
   },
@@ -23,40 +23,40 @@ export const ABOUT_SECTIONS = [
   },
   {
     id: "way",
-    title: "The Zevaro Way",
+    title: "The Synaptica Way",
     image: "/api/placeholder/500/600",
     description: [
-      "At Zevaro, we believe clothing is more than what you wear – it's a statement of values. Our process is guided by:"
+      "At Synaptica, we believe software is more than code – it's an enabler of outcomes. Our process is guided by:"
     ],
     list: [
       {
-        heading: "Lean Thinking",
-        text: "Eliminating waste, maximizing efficiency, and focusing on what truly adds value."
+        heading: "Lean Product Thinking",
+        text: "Minimize waste, validate early, and focus on outcomes that create real business value."
       },
       {
-        heading: "Sustainability First",
-        text: "Choosing materials, methods, and processes that reduce impact on the environment."
+        heading: "Scale and Reliability",
+        text: "Designing cloud-native systems that are secure, observable, and resilient from day one."
       },
       {
-        heading: "Human-Centered Practices",
-        text: "Valuing people, from our skilled artisans to the end customer, ensuring dignity, respect, and empowerment at every stage."
+        heading: "Human-Centered Design",
+        text: "Building with empathy for users and teams, ensuring clarity, simplicity, and joy at every touchpoint."
       }
     ],
     reverse: false,
   },
   {
     id: "heart",
-    title: "The Heart of Zevaro",
+    title: "The Heart of Synaptica",
     image: "/api/placeholder/500/600",
     mission: {
       heading: "Mission",
-      quote: `"Stitching Excellence with Purpose"`,
-      text: "To create garments of exceptional quality, with a focus on sustainability, innovation, and ethical practices – delivering not just products, but experiences that delight customers and honor the planet."
+      quote: `"Engineering Impact with Craft"`,
+      text: "To deliver reliable, secure, and intuitive software that empowers organizations to move faster, scale confidently, and delight their users."
     },
     vision: {
       heading: "Vision",
-      quote: `"Shaping the Future of Fashion in Sri Lanka"`,
-      text: "To lead as Sri Lanka's benchmark in premium garment manufacturing – setting global standards for excellence, sustainability, and positive community impact."
+      quote: `"Building the Digital Backbone for Modern Businesses"`,
+      text: "To be a trusted technology partner known for quality, integrity, and transformative results across industries."
     },
     reverse: true,
   }

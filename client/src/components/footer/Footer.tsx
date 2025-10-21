@@ -9,7 +9,7 @@ import {
   CONTACT_INFO,
   LOCATION,
 } from "@/constants/footer";
-import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import Link from "next/link";
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -96,23 +96,11 @@ const Footer = () => {
             {/* Location */}
             <div>
               <h3 className="mb-6 text-lg font-semibold text-white">
-                Location
+                Address
               </h3>
-              <div className="flex items-start gap-3">
-                <div className="flex-1">
-                  <iframe
-                    src={`https://www.google.com/maps?q=${encodeURIComponent(
-                      LOCATION
-                    )}&output=embed`}
-                    width="100%"
-                    height="200"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    className="rounded-lg shadow-md"
-                  ></iframe>
-                </div>
+              <div className="flex items-start gap-3 text-gray-300">
+                <MapPin className="flex-shrink-0 w-5 h-5 mt-0.5 text-gray-400" />
+                <p className="text-sm leading-relaxed">{LOCATION}</p>
               </div>
             </div>
           </div>

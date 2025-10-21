@@ -63,7 +63,7 @@ const Category: React.FC<CategoryProps> = ({ activeCategory, onCategoryChange })
 
         {/* Desktop Buttons */}
         <motion.div
-          className="justify-between hidden w-full gap-5 px-40 py-10 lg:flex max-w-[1920px] mx-auto"
+          className="hidden w-full lg:flex max-w-[1920px] mx-auto justify-center gap-8 px-6 py-10"
           variants={listVariants}
         >
           {PRODUCT_CATEGORIES.map((cat) => (

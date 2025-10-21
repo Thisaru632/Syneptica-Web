@@ -12,7 +12,7 @@ const HeroSection = () => {
         <div className="relative w-full h-screen -mt-16 overflow-hidden">
             {/* Hero Image */}
             <Image
-                src={PRODUCT_HERO_THUMB}
+                src="/images/971.jpg"
                 alt="Hero"
                 fill
                 className="object-cover"

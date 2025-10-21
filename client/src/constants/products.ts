@@ -36,7 +36,6 @@ export const PRODUCT_CATEGORIES = [
     { value: "mobile-app", label: "Mobile App Development" },
     { value: "server-services", label: "Server-side Services" },
     { value: "consultation", label: "Consultation Services" },
-    { value: "web-development", label: "Web Development" },
 ];
 
 // Technology Services for Product Page

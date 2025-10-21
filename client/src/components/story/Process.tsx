@@ -3,9 +3,8 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import BackgroundPattern from "../ui/common/BackgroundPattern";
-import { AnimatedButton } from "../ui/common/AnimatedButton";
 import { STEPS } from "@/constants/story";
-import { sectionVariants, textVariants, listVariants, listItemVariants, ctaVariants } from "@/utils/animations";
+import { sectionVariants, textVariants, listVariants, listItemVariants } from "@/utils/animations";
 
 const ProcessSteps: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -57,13 +56,10 @@ const ProcessSteps: React.FC = () => {
                 {/* Mobile Content */}
                 <motion.p
                   variants={textVariants}
-                  className="mb-6 text-sm leading-relaxed sm:text-base text-white/80"
+                  className="text-sm leading-relaxed sm:text-base text-white/80"
                 >
                   {step.description}
                 </motion.p>
-                <motion.div variants={ctaVariants}>
-                  <AnimatedButton>{step.buttonText}</AnimatedButton>
-                </motion.div>
               </motion.div>
             ))}
           </motion.div>
@@ -109,17 +105,10 @@ const ProcessSteps: React.FC = () => {
                       </div>
                       <motion.p
                         variants={textVariants}
-                        className="mb-8 text-base leading-relaxed xl:text-lg text-white/80"
+                        className="text-base leading-relaxed xl:text-lg text-white/80"
                       >
                         {step.description}
                       </motion.p>
-                      <motion.div variants={ctaVariants}>
-                        <AnimatedButton
-                          className="w-[200px] font-bold border border-white bg-transparent text-white"
-                        >
-                          {step.buttonText}
-                        </AnimatedButton>
-                      </motion.div>
                     </motion.div>
                   </div>
                   {/* Connecting Line (except for last item) */}

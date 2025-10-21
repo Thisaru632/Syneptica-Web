@@ -3,74 +3,74 @@ export const HERO_SLIDES = [
     id: 1,
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop",
     title: "Our Process",
-    description: "From concept to delivery, we follow a comprehensive 5-step process that ensures excellence, quality, and satisfaction at every stage of garment manufacturing."
+    description: "From discovery to launch, our 5-step software lifecycle ensures clarity, speed, quality, and business impact."
   },
   {
     id: 2,
     image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1920&h=1080&fit=crop",
-    title: "Understanding Your Needs",
-    description: "We begin by thoroughly understanding your vision, requirements, and specifications to ensure every detail aligns with your expectations and goals."
+    title: "Discovery & Requirements",
+    description: "We align on goals, scope, and success metrics. User and stakeholder interviews turn ideas into clear, prioritized requirements."
   },
   {
     id: 3,
     image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1920&h=1080&fit=crop",
-    title: "Sampling & Refinement",
-    description: "Through meticulous sampling and iterative refinement, we perfect every aspect of design, fit, and construction before moving to production."
+    title: "UX/UI & Prototyping",
+    description: "We design flows, wireframes, and high‑fidelity UI. Clickable prototypes validate the experience before build."
   },
   {
     id: 4,
     image: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=1920&h=1080&fit=crop",
-    title: "Precision Production",
-    description: "Our skilled craftsmen and advanced machinery work in harmony to deliver precise, consistent production that meets the highest industry standards."
+    title: "Development & DevOps",
+    description: "Agile sprints deliver incremental value. We use modern stacks, CI/CD, code reviews, and infrastructure as code for reliability and speed."
   },
   {
     id: 5,
     image: "https://images.unsplash.com/photo-1434894944929-2feb3a8b681f?w=1920&h=1080&fit=crop",
-    title: "Quality Assurance",
-    description: "Rigorous quality control processes and comprehensive inspections ensure every garment meets our exacting standards for excellence."
+    title: "QA & Security",
+    description: "Automated tests, manual QA, performance checks, and security reviews ensure robustness before release."
   },
   {
     id: 6,
     image: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=1920&h=1080&fit=crop",
-    title: "On-Time Delivery",
-    description: "We pride ourselves on reliable, punctual delivery that keeps your business running smoothly and your customers satisfied."
+    title: "Launch & Monitoring",
+    description: "We deploy, observe, and optimize in production with analytics, logging, and ongoing support."
   }
 ];
 
 export const STEPS = [
   {
     number: 1,
-    title: "Understanding",
-    subtitle: "Your needs",
-    description: "We start with a conversation to understand your business needs and objectives. Our team analyzes your current processes, identifies pain points, and explores opportunities for improvement through innovative digital solutions.",
+    title: "Discovery",
+    subtitle: "Requirements",
+    description: "Stakeholder workshops, user research, and technical due diligence translate your goals into a prioritized product backlog and a clear roadmap.",
     buttonText: "Learn More"
   },
   {
     number: 2,
-    title: "Sampling",
-    subtitle: "& Refinement",
-    description: "Your idea comes to life through rapid prototyping and iterative design. We create wireframes, mockups, and interactive prototypes that allow you to visualize the final product before development begins.",
+    title: "UX/UI",
+    subtitle: "Prototyping",
+    description: "Information architecture, wireframes, and visual design converge into interactive prototypes to validate usability and reduce rework.",
     buttonText: "Learn More"
   },
   {
     number: 3,
-    title: "Precision",
-    subtitle: "Production",
-    description: "Our experienced development team transforms your vision into reality using cutting-edge technologies, best practices, and proven methodologies. We ensure scalability, security, and performance at every step.",
+    title: "Development",
+    subtitle: "DevOps",
+    description: "Agile, test-driven development with CI/CD and code reviews. We build secure, scalable APIs and frontends, automating deployments from day one.",
     buttonText: "Learn More"
   },
   {
     number: 4,
     title: "Quality",
-    subtitle: "Assurance",
-    description: "Every solution undergoes rigorous testing to ensure flawless performance. Our dedicated quality assurance team conducts comprehensive testing across multiple devices, browsers, and scenarios.",
+    subtitle: "Security",
+    description: "Automated unit/integration/E2E tests, accessibility checks, performance audits, and security scanning ensure reliability.",
     buttonText: "Learn More"
   },
   {
     number: 5,
-    title: "On-Time",
-    subtitle: "Delivery",
-    description: "We pride ourselves on delivering projects on schedule without compromising quality. Our project management approach ensures transparent communication and timely delivery of your digital solution.",
+    title: "Launch",
+    subtitle: "Monitoring",
+    description: "Production rollout with observability, analytics, and SLOs. We iterate with real‑world feedback and provide ongoing support.",
     buttonText: "Learn More"
   }
 ];

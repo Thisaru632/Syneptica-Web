@@ -5,7 +5,7 @@ type IconProps = {
   size?: number;
 };
 
-export const ZevaroIcon: React.FC<IconProps> = ({ color = '#FFFFFF', size = 30 }) => (
+export const SynapticaIcon: React.FC<IconProps> = ({ color = '#FFFFFF', size = 30 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={size}

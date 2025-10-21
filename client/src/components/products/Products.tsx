@@ -36,6 +36,7 @@ interface CategorySectionProps {
 const CategorySection: React.FC<CategorySectionProps> = ({ category, products, categoryIndex, onCategoryInView }) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-120px" });
+  const router = useRouter();
 
   const getCategoryId = (category: string): string => {
     return `category-${category.toLowerCase().replace(/\s+/g, "-")}`;
@@ -66,7 +67,7 @@ const CategorySection: React.FC<CategorySectionProps> = ({ category, products, c
 
   // Handle product card button clicks
   const handleProductClick = (product: Product, index: number): void => {
-    console.log(`Exploring ${product.title} at index ${index}...`);
+    router.push("/contact");
   };
 
   useEffect(() => {
@@ -99,7 +100,7 @@ const CategorySection: React.FC<CategorySectionProps> = ({ category, products, c
                 images={images}
                 title={product.title}
                 description={product.description}
-                buttonText={product.buttonText}
+                buttonText="Contact Us"
                 imageLeft={categoryIndex % 2 === 0}
                 onButtonClick={() => handleProductClick(product, productIndex)}
                 autoplayDelay={product.autoplayDelay || 3000 + overallIndex * 500}

@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
       {/* Hero Image */}
       <Image
         src={ABOUT_HERO_THUMB}
-        alt="About Zevaro - Our Story"
+        alt="About Synaptica - Our Story"
         fill
         className="object-cover opacity-70"
         priority
@@ -25,7 +25,7 @@ const HeroSection: React.FC = () => {
         <Title
           title={
             <>
-              The Zevaro <br />
+              The Synaptica <br />
               Journey
             </>
           }
