@@ -1,10 +1,10 @@
 export const FOOTER_LINKS = [
   { name: "Home", path: "/" },
-  { name: "Our Products", path: "/products" },
-  { name: "How We Make It", path: "/story" },
   { name: "About Us", path: "/about" },
+  { name: "Our Services", path: "/products" },
+  { name: "Our Story", path: "/story" },
   { name: "Contact Us", path: "/contact" },
-  { name: "Review", path: "/review" },
+  { name: "Reviews", path: "/review" },
 ];
 
 export const SOCIAL_MEDIA = [

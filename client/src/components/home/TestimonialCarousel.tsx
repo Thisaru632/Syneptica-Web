@@ -7,8 +7,6 @@ import BackgroundPattern from "../ui/common/BackgroundPattern";
 import { TestimonialItem } from "@/constants/testimonials";
 import { Title } from "../ui/common/Title";
 import { sectionVariants, textVariants, listVariants, listItemVariants } from "@/utils/animations";
-import Link from "next/link";
-import { AnimatedButton } from "../ui/common/AnimatedButton";
 import { Avatar, AvatarFallback } from "../ui/avatar";
 
 interface TestimonialCarouselProps {
@@ -180,13 +178,6 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
           />
         ))}
       </motion.div>
-      <div className="flex justify-center mt-10">
-          <Link href="/review">
-            <AnimatedButton className="transition-transform duration-300 border-white group-hover:scale-105">
-              Add a Review
-            </AnimatedButton>
-          </Link>
-        </div>
     </BackgroundPattern>
   );
 };

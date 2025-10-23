@@ -58,16 +58,13 @@ const Footer = () => {
               </h3>
               <div className="flex flex-wrap gap-3">
                 {SOCIAL_MEDIA.map((social) => (
-                  <a
+                  <div
                     key={social.name}
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center w-10 h-10 text-white transition-colors duration-200 bg-gray-800 rounded-full hover:bg-gray-700"
-                    aria-label={`Follow us on ${social.name}`}
+                    className="inline-flex items-center justify-center w-10 h-10 text-white bg-gray-800 rounded-full"
+                    aria-label={`${social.name} icon`}
                   >
                     {iconMap[social.icon]}
-                  </a>
+                  </div>
                 ))}
               </div>
             </div>
@@ -135,7 +132,7 @@ const Footer = () => {
 
             {/* Copyright */}
             <p className="text-xs text-gray-400">
-              © {new Date().getFullYear()} TechDoc Solutions PVT Ltd. All Rights
+              © {new Date().getFullYear()} Synaptica. All Rights
               Reserved.
             </p>
           </div>
