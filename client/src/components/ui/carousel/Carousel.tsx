@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { AnimatedButton } from "../common/AnimatedButton";
 
@@ -24,6 +25,7 @@ const Carousel: React.FC<CarouselProps> = ({
 }) => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const total = products.length;
+  const router = useRouter();
 
   // autoplay
   useEffect(() => {
@@ -65,7 +67,11 @@ const Carousel: React.FC<CarouselProps> = ({
         <p className="mb-4 text-xs sm:text-sm md:text-base text-gray-300 line-clamp-3">
           {product.description}
         </p>
-        <AnimatedButton inverse size="sm">
+        <AnimatedButton 
+          inverse 
+          size="sm"
+          onClick={() => router.push('/products')}
+        >
           Deep Dive
         </AnimatedButton>
       </div>

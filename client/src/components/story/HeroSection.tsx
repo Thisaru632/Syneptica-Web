@@ -7,6 +7,18 @@ const HeroImageSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
+  // Safety check for HERO_SLIDES
+  if (!HERO_SLIDES || HERO_SLIDES.length === 0) {
+    return (
+      <div className="relative w-full h-screen -mt-16 overflow-hidden bg-gray-900 flex items-center justify-center">
+        <div className="text-center text-white">
+          <h1 className="text-4xl font-bold mb-4">Loading...</h1>
+          <p className="text-lg">Please wait while we load the content.</p>
+        </div>
+      </div>
+    );
+  }
+
   // Auto-play functionality
   useEffect(() => {
     if (!isAutoPlaying) return;

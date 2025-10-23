@@ -4,14 +4,13 @@ import React from "react";
 import Image from "next/image";
 import { AnimatedButton } from "../ui/common/AnimatedButton";
 import { Title } from "../ui/common/Title";
-import { PRODUCT_HERO_THUMB } from "@/constants/links";
 
 const HeroSection: React.FC = () => {
   return (
     <div className="relative w-full h-[80vh] lg:h-screen -mt-16 overflow-hidden">
       {/* Hero Image */}
       <Image
-        src={PRODUCT_HERO_THUMB}
+        src="/images/971.jpg"
         alt="Contact Hero"
         fill
         className="object-cover"

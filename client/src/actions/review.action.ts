@@ -49,7 +49,12 @@ export async function createReview(data: { name: string; email: string; descript
 
 // READ all - Return mock data
 export async function getReviews(): Promise<IReview[]> {
-  return mockReviews;
+  try {
+    return mockReviews;
+  } catch (error) {
+    console.error('Error in getReviews:', error);
+    throw new Error('Failed to fetch reviews');
+  }
 }
 
 // READ one - Mock function

@@ -2,6 +2,7 @@
 
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { useRouter } from "next/navigation";
 import { Title } from "../ui/common/Title";
 import BackgroundPattern from "../ui/common/BackgroundPattern";
 import { FEATURES } from "@/constants/whyChooseUs";
@@ -16,6 +17,7 @@ import {
 const WhyChooseUs: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
+  const router = useRouter();
 
   return (
     <BackgroundPattern className="py-12 lg:py-20">
@@ -64,6 +66,7 @@ const WhyChooseUs: React.FC = () => {
               buttonText="Learn More"
               imageLeft={idx % 2 === 0}
               className="max-w-7xl mx-auto"
+              onButtonClick={() => router.push('/about')}
             />
           </motion.div>
         ))}

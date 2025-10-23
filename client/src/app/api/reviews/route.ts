@@ -8,6 +8,11 @@ export async function GET() {
     return NextResponse.json(reviews);
   } catch (error) {
     console.error('Error fetching review:', error);
+    console.error('Error details:', {
+      message: error instanceof Error ? error.message : 'Unknown error',
+      stack: error instanceof Error ? error.stack : undefined,
+      name: error instanceof Error ? error.name : 'Unknown'
+    });
     return NextResponse.json({ error: 'Failed to fetch reviews' }, { status: 500 });
   }
 }

@@ -62,9 +62,44 @@ export const ABOUT_SECTIONS = [
   }
 ];
 
+export const TEAM_MEMBERS = [
+  {
+    id: "1",
+    name: "Sarah Johnson",
+    role: "CEO & Co-Founder",
+    image: "/images/testimonial/user.png",
+    description: "Visionary leader with 10+ years in technology and business strategy.",
+    expertise: ["Strategic Planning", "Leadership", "Innovation"]
+  },
+  {
+    id: "2", 
+    name: "Michael Chen",
+    role: "CTO & Co-Founder",
+    image: "/images/testimonial/user.png",
+    description: "Technical architect passionate about scalable solutions and cutting-edge technology.",
+    expertise: ["Software Architecture", "Cloud Computing", "AI/ML"]
+  },
+  {
+    id: "3",
+    name: "Emily Rodriguez",
+    role: "Lead Developer",
+    image: "/images/testimonial/user.png", 
+    description: "Full-stack developer with expertise in modern web technologies and user experience.",
+    expertise: ["Frontend Development", "UX Design", "React/Next.js"]
+  },
+  {
+    id: "4",
+    name: "David Kim",
+    role: "DevOps Engineer",
+    image: "/images/testimonial/user.png",
+    description: "Infrastructure specialist focused on reliability, security, and performance optimization.",
+    expertise: ["DevOps", "Cloud Infrastructure", "Security"]
+  }
+];
+
 export const ABOUT_CTA = {
   heading: "Ready to Experience Excellence?",
-  text: "Discover our premium products and see how we're revolutionizing fashion manufacturing.",
+  text: "Meet our talented team of experts who are dedicated to delivering exceptional results.",
   primaryBtn: "Discover Our Products",
   secondaryBtn: "Get In Touch",
 };
