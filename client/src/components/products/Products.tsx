@@ -66,7 +66,7 @@ const CategorySection: React.FC<CategorySectionProps> = ({ category, products, c
   };
 
   // Handle product card button clicks
-  const handleProductClick = (product: Product, index: number): void => {
+  const handleProductClick = (): void => {
     router.push("/contact");
   };
 

@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import { AnimatedButton } from "../ui/common/AnimatedButton";
-import { PRODUCT_HERO_THUMB } from "@/constants/links";
 import { Title } from "../ui/common/Title";
 import { useRouter } from "next/navigation";
 

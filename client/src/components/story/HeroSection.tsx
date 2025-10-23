@@ -1,11 +1,23 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { HERO_SLIDES } from "@/constants/story";
 
 const HeroImageSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+
+  // Auto-play functionality
+  useEffect(() => {
+    if (!isAutoPlaying) return;
+    
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % HERO_SLIDES.length);
+    }, 6000); // Change slide every 6 seconds for more content
+
+    return () => clearInterval(interval);
+  }, [isAutoPlaying]);
 
   // Safety check for HERO_SLIDES
   if (!HERO_SLIDES || HERO_SLIDES.length === 0) {
@@ -18,17 +30,6 @@ const HeroImageSlider = () => {
       </div>
     );
   }
-
-  // Auto-play functionality
-  useEffect(() => {
-    if (!isAutoPlaying) return;
-    
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % HERO_SLIDES.length);
-    }, 6000); // Change slide every 6 seconds for more content
-
-    return () => clearInterval(interval);
-  }, [isAutoPlaying]);
 
 interface GoToSlideFn {
     (index: number): void;
@@ -63,10 +64,11 @@ const goToSlide: GoToSlideFn = (index) => {
             index === currentSlide ? "opacity-100" : "opacity-0"
           }`}
         >
-          <img
+          <Image
             src={slide.image}
             alt={slide.title}
-            className="object-cover w-full h-full"
+            fill
+            className="object-cover"
           />
           
           {/* Gradient Overlay for better text readability */}

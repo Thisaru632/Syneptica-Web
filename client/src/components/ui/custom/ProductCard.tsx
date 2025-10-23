@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image';
 import { AnimatedButton } from '../common/AnimatedButton';
 
 // Enhanced TypeScript interfaces
@@ -29,7 +30,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     imageLeft = true,
     className = "",
     onButtonClick,
-    autoplayDelay = 3000
+    autoplayDelay = 3000 // eslint-disable-line @typescript-eslint/no-unused-vars
 }) => {
     // Validate images array
     const validImages = images && images.length > 0 ? images : [
@@ -60,10 +61,11 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             {/* Image Section */}
             <div className="relative w-full lg:w-1/2 h-64 sm:h-80 lg:h-auto lg:max-h-[830px]">
                 <div className="relative w-full h-full overflow-hidden">
-                    <img 
+                    <Image 
                         src={validImages[0].src}
                         alt={validImages[0].alt}
-                        className="object-cover w-full h-full transition-transform duration-700 hover:scale-105" 
+                        fill
+                        className="object-cover transition-transform duration-700 hover:scale-105" 
                     />
                     {/* Gradient overlay for better text readability on mobile */}
                     <div className="absolute inset-0 bg-gradient-to-t from-darkBg/100 to-darkBg/0 lg:hidden" />
