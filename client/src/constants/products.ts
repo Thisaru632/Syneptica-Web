@@ -1,3 +1,43 @@
+export interface ProductSlide {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+}
+
+export const PRODUCT_SLIDES: ProductSlide[] = [
+  {
+    id: "1",
+    title: "Software Development & Maintenance",
+    description: "Custom, scalable applications tailored to your business needs",
+    image: "/images/products/new/loyalty.jpg"
+  },
+  {
+    id: "2", 
+    title: "Cloud-Based SaaS Solutions",
+    description: "Flexible, cost-effective, and secure cloud applications",
+    image: "/images/products/new/gaming.jpg"
+  },
+  {
+    id: "3",
+    title: "Enterprise-Grade Solutions",
+    description: "Secure platforms that streamline operations for large organizations",
+    image: "/images/products/new/E commerce.jpg"
+  },
+  {
+    id: "4",
+    title: "Custom Software Solutions",
+    description: "Tailored tools for industry-specific requirements",
+    image: "/images/products/new/Internet Booking Engines.jpg"
+  },
+  {
+    id: "5",
+    title: "Consulting & Support",
+    description: "Ongoing guidance and maintenance to maximize ROI",
+    image: "/images/products/29045.jpg"
+  }
+];
+
 export const PRODUCTS = [
     {
         id: 1,

@@ -3,10 +3,13 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { HERO_SLIDES } from "@/constants/story";
+import { AnimatedButton } from "../ui/common/AnimatedButton";
+import { useRouter } from "next/navigation";
 
 const HeroImageSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const router = useRouter();
 
   // Auto-play functionality
   useEffect(() => {
@@ -55,7 +58,7 @@ const goToSlide: GoToSlideFn = (index) => {
   };
 
   return (
-    <div className="relative w-full h-screen -mt-16 overflow-hidden">
+    <div className="relative w-full h-[110vh] -mt-16 overflow-hidden">
       {/* Slide Images */}
       {HERO_SLIDES.map((slide, index) => (
         <div
@@ -82,7 +85,14 @@ const goToSlide: GoToSlideFn = (index) => {
             <p className="max-w-4xl text-lg font-light leading-relaxed text-white sm:text-xl lg:text-2xl drop-shadow-md">
               {slide.description}
             </p>
-           
+            <div className="mt-4">
+              <AnimatedButton
+                className="bg-[#E43636] hover:bg-[#C42D2D] transition-colors duration-300"
+                onClick={() => router.push('/contact')}
+              >
+                Get in Touch
+              </AnimatedButton>
+            </div>
           </div>
         </div>
       ))}
