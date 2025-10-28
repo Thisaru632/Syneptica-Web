@@ -2,6 +2,9 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getReviewById, updateReview, deleteReview } from '@/actions/review.action';
 import { IReview } from '@/models/Review';
 
+// Force dynamic rendering
+export const dynamic = 'force-dynamic';
+
 export async function GET(
   request: NextRequest,
   context: { params: Promise<{ id: string }> }

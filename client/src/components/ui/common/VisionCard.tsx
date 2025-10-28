@@ -11,7 +11,7 @@ interface VisionCardProps {
 export const VisionCard: React.FC<VisionCardProps> = ({ idx, title, heading, text }) => {
   return (
     <div
-      className={`group relative bg-darkBg text-white rounded-sm shadow-2xl p-8 flex flex-col justify-between overflow-hidden h-[520px] border border-gray-600/30 hover:border-gray-500/50 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-3xl`}
+      className={`group relative bg-darkBg text-white rounded-sm shadow-2xl p-8 flex flex-col justify-between overflow-hidden h-[700px] border border-gray-600/30 hover:border-gray-500/50 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-3xl`}
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-3">
@@ -47,8 +47,8 @@ export const VisionCard: React.FC<VisionCardProps> = ({ idx, title, heading, tex
           {heading}
         </h2>
 
-        <div className="flex-grow mb-8 h-[200px] overflow-hidden">
-          <p className="relative text-base leading-relaxed text-justify text-gray-300 h-full">
+        <div className="flex-grow mb-8">
+          <p className="relative text-base leading-relaxed text-justify text-gray-300">
             <span className="absolute top-0 font-serif text-6xl leading-none -left-4 text-gray-500/10">&quot;</span>
             {text}
             <span className="absolute bottom-0 font-serif text-6xl leading-none -right-2 text-gray-500/10">&quot;</span>

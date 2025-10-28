@@ -1,6 +1,7 @@
 import { getReviews } from "@/actions/review.action";
 import HeroSection from "@/components/home/HeroSection";
 import ProductCarousel from "@/components/home/ProductCarousel";
+import ProductsShowcase from "@/components/home/ProductsShowcase";
 import Testimonial from "@/components/home/TestimonialCarousel";
 import VisionValuesProcess from "@/components/home/VisionValuesProcess";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
@@ -22,6 +23,7 @@ export default async function Home() {
         <HeroSection />
         <VisionValuesProcess />
         <ProductCarousel />
+        <ProductsShowcase />
         <WhyChooseUs />
         <Testimonial testimonials={testimonials} />
       </BackgroundPattern>

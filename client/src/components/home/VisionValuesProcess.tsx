@@ -18,10 +18,10 @@ const VisionValuesProcess: React.FC = () => {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={sectionVariants}
-        className="grid grid-cols-1 gap-8 mx-auto md:grid-cols-3 max-w-7xl"
+        className="grid grid-cols-1 gap-8 mx-auto md:grid-cols-3 max-w-7xl items-stretch"
       >
         {VISION.map((card, idx) => (
-          <motion.div key={idx} variants={listItemVariants}>
+          <motion.div key={idx} variants={listItemVariants} className="h-full">
             <VisionCard idx={idx} {...card} />
           </motion.div>
         ))}

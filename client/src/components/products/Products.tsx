@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { ProductCard, type ProductImage } from "../ui/custom/ProductCard";
 import BackgroundPattern from "../ui/common/BackgroundPattern";
@@ -9,9 +9,8 @@ import { useRouter } from "next/navigation";
 import { AnimatedButton } from "../ui/common/AnimatedButton";
 import { sectionVariants, textVariants, listVariants, listItemVariants, ctaVariants } from "@/utils/animations";
 
-interface ProductsProps {
-  onCategoryInView: (category: string) => void;
-}
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
+interface ProductsProps {}
 
 // Type for your PRODUCTS constant
 interface Product {
@@ -30,10 +29,9 @@ interface CategorySectionProps {
   category: string;
   products: Product[];
   categoryIndex: number;
-  onCategoryInView: (category: string) => void;
 }
 
-const CategorySection: React.FC<CategorySectionProps> = ({ category, products, categoryIndex, onCategoryInView }) => {
+const CategorySection: React.FC<CategorySectionProps> = ({ category, products, categoryIndex }) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-120px" });
   const router = useRouter();
@@ -66,19 +64,10 @@ const CategorySection: React.FC<CategorySectionProps> = ({ category, products, c
   };
 
   // Handle product card button clicks
-  const handleProductClick = (product: Product, index: number): void => {
+  const handleProductClick = (): void => {
     router.push("/contact");
   };
 
-  useEffect(() => {
-    if (isInView) {
-      const formattedCategory = category.replace(/\b\w/g, (letter) => letter.toUpperCase());
-      const timeoutId = setTimeout(() => {
-        onCategoryInView(formattedCategory);
-      }, 100);
-      return () => clearTimeout(timeoutId);
-    }
-  }, [isInView, category, onCategoryInView]);
 
   return (
     <motion.div
@@ -102,7 +91,7 @@ const CategorySection: React.FC<CategorySectionProps> = ({ category, products, c
                 description={product.description}
                 buttonText="Contact Us"
                 imageLeft={categoryIndex % 2 === 0}
-                onButtonClick={() => handleProductClick(product, productIndex)}
+                onButtonClick={handleProductClick}
                 autoplayDelay={product.autoplayDelay || 3000 + overallIndex * 500}
                 className="
                   mx-auto 
@@ -121,7 +110,7 @@ const CategorySection: React.FC<CategorySectionProps> = ({ category, products, c
   );
 };
 
-const Products: React.FC<ProductsProps> = ({ onCategoryInView }) => {
+const Products: React.FC<ProductsProps> = () => {
   const router = useRouter();
 
   // Group products by category
@@ -156,7 +145,6 @@ const Products: React.FC<ProductsProps> = ({ onCategoryInView }) => {
               category={category}
               products={products}
               categoryIndex={categoryIndex}
-              onCategoryInView={onCategoryInView}
             />
           ))}
         </div>

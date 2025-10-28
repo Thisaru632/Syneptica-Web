@@ -2,6 +2,9 @@ import { NextResponse } from 'next/server';
 import { IReview } from '@/models/Review';
 import { createReview, getReviews } from '@/actions/review.action';
 
+// Force dynamic rendering
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
   try {
     const reviews: IReview[] = await getReviews();
