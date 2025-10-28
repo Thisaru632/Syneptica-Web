@@ -4,7 +4,6 @@ export const FOOTER_LINKS = [
   { name: "Our Services", path: "/products" },
   { name: "Our Story", path: "/story" },
   { name: "Contact Us", path: "/contact" },
-  { name: "Reviews", path: "/review" },
 ];
 
 export const SOCIAL_MEDIA = [
