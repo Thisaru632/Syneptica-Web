@@ -17,7 +17,7 @@ const HeroSection = () => {
                 muted
                 playsInline
                 preload="none"
-                poster={HERO_THUMB}
+                // poster={HERO_THUMB}
             >
                 <source src={HERO_VIDEO} type="video/mp4" />
             </video>
