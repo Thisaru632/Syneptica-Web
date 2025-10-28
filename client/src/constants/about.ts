@@ -3,21 +3,21 @@
 export const ABOUT_SECTIONS = [
   {
     id: "spark",
-    title: "The Spark Behind Synaptica",
+    title: "About Synaptica (Pvt) Ltd",
     image: "/api/placeholder/500/400",
     description: [
-      "Every great product begins with a problem worth solving. For us, it was helping businesses turn complex challenges into elegant, scalable digital solutions.",
-      "Founded by passionate engineers and product builders, Synaptica was created to deliver high-impact software with craftsmanship, empathy, and a relentless focus on user value."
+      "Synaptica (Pvt) Ltd is a forward-thinking technology company specializing in Software-as-a-Service (SaaS) solutions for diverse industries. We deliver innovative, scalable, and secure software platforms that help businesses streamline operations, enhance customer engagement, and accelerate digital transformation.",
+      "Our experience spans enterprise-grade applications, loyalty platforms, ecommerce solutions, fiber network management tools, and internet booking engines. By combining industry expertise with cutting-edge technology, we empower organizations of all sizes to optimize efficiency, unlock growth opportunities, and remain competitive in a fast-evolving digital landscape."
     ],
     reverse: false,
   },
   {
     id: "faces",
-    title: "The Faces Behind the Fabric",
+    title: "Our Expertise & Experience",
     image: "/api/placeholder/500/400",
     description: [
-      "A brief look at the founders – two BSc Textile & Apparel Engineering graduates with industry expertise, who combined their technical skills with a shared mission: to create garments that blend premium craftsmanship, sustainability, and innovation.",
-      "Their journey from students to entrepreneurs reflects resilience, creativity, and purpose."
+      "With deep expertise in SaaS development and enterprise solutions, our team combines technical excellence with industry knowledge to deliver transformative digital experiences.",
+      "Our diverse experience across loyalty platforms, ecommerce solutions, fiber network management, and booking engines positions us as a comprehensive technology partner for businesses seeking digital innovation."
     ],
     reverse: true,
   },
@@ -51,12 +51,12 @@ export const ABOUT_SECTIONS = [
     mission: {
       heading: "Mission",
       quote: `"Engineering Impact with Craft"`,
-      text: "To deliver reliable, secure, and intuitive software that empowers organizations to move faster, scale confidently, and delight their users."
+      text: "Develop high-quality SaaS and enterprise solutions that drive operational efficiency. Enable digital transformation for businesses across industries. Foster innovation through cutting-edge technology and strategic partnerships. Deliver seamless user experiences with robust and secure platforms. Provide ongoing support to ensure long-term client success."
     },
     vision: {
       heading: "Vision",
-      quote: `"Building the Digital Backbone for Modern Businesses"`,
-      text: "To be a trusted technology partner known for quality, integrity, and transformative results across industries."
+      quote: `"Leading Technology Innovation Globally"`,
+      text: "To be a leading technology innovator, delivering scalable, secure, and transformative software solutions that empower businesses globally."
     },
     reverse: true,
   }

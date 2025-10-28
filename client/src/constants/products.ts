@@ -1,30 +1,37 @@
 export const PRODUCTS = [
     {
         id: 1,
-        title: "SOFTWARE DEVELOPMENT",
-        description: "Custom software solutions built with cutting-edge technologies and best practices",
+        title: "SOFTWARE DEVELOPMENT & MAINTENANCE",
+        description: "Custom, scalable applications tailored to your business needs",
         image: "/images/products/digital-environment-scene.jpg",
         buttonText: "Learn More"
     },
     {
         id: 2,
-        title: "MOBILE APP DEVELOPMENT",
-        description: "Native and cross-platform mobile applications for iOS and Android",
+        title: "CLOUD-BASED SAAS SOLUTIONS",
+        description: "Flexible, cost-effective, and secure cloud applications",
         image: "/images/products/representations-user-experience-interface-design.jpg",
         buttonText: "Learn More"
     },
     {
         id: 3,
-        title: "SERVER-SIDE SERVICES",
-        description: "Robust backend infrastructure and cloud-based server solutions",
+        title: "ENTERPRISE-GRADE SOLUTIONS",
+        description: "Secure platforms that streamline operations for large organizations",
         image: "/images/products/data-server-racks-hub-room-with-big-data-computer-center-blue-interior-hosting-storage-hardware.jpg",
         buttonText: "Learn More"
     },
     {
         id: 4,
-        title: "CONSULTATION SERVICES",
-        description: "Expert technology consultation to transform your business vision",
+        title: "CUSTOM SOFTWARE SOLUTIONS",
+        description: "Tailored tools for industry-specific requirements",
         image: "/images/products/meeting-business-executives.jpg",
+        buttonText: "Learn More"
+    },
+    {
+        id: 5,
+        title: "CONSULTING & SUPPORT",
+        description: "Ongoing guidance and maintenance to maximize ROI",
+        image: "/images/products/29045.jpg",
         buttonText: "Learn More"
     },
 ];
@@ -32,70 +39,86 @@ export const PRODUCTS = [
 // Make sure your PRODUCTS_2 array includes the category field that matches PRODUCT_CATEGORIES labels
 
 export const PRODUCT_CATEGORIES = [
-    { value: "software-development", label: "Software Development" },
-    { value: "mobile-app", label: "Mobile App Development" },
-    { value: "server-services", label: "Server-side Services" },
-    { value: "consultation", label: "Consultation Services" },
+    { value: "software-development", label: "Software Development & Maintenance" },
+    { value: "saas-solutions", label: "Cloud-Based SaaS Solutions" },
+    { value: "enterprise-solutions", label: "Enterprise-Grade Solutions" },
+    { value: "custom-software", label: "Custom Software Solutions" },
+    { value: "consulting-support", label: "Consulting & Support" },
 ];
 
 // Technology Services for Product Page
 export const PRODUCTS_2 = [
     {
         id: "service-1",
-        title: "SOFTWARE DEVELOPMENT",
-        description: "Custom software solutions built with cutting-edge technologies and best practices. We create scalable, maintainable applications that drive your business forward.",
+        title: "SOFTWARE DEVELOPMENT & MAINTENANCE",
+        description: "Custom, scalable applications tailored to your business needs. We develop robust software solutions with ongoing maintenance and support to ensure optimal performance and reliability.",
         buttonText: "Learn More",
-        category: "Software Development",
+        category: "Software Development & Maintenance",
         images: [
             {
                 id: "software-1",
                 src: "/images/products/digital-environment-scene.jpg",
-                alt: "Software Development Services"
+                alt: "Software Development & Maintenance Services"
             }
         ],
         autoplayDelay: 0
     },
     {
         id: "service-2",
-        title: "MOBILE APP DEVELOPMENT",
-        description: "Native and cross-platform mobile applications for iOS and Android. We build intuitive, high-performance apps that engage your users and grow your business.",
+        title: "CLOUD-BASED SAAS SOLUTIONS",
+        description: "Flexible, cost-effective, and secure cloud applications. We build scalable SaaS platforms that provide seamless user experiences while reducing infrastructure costs.",
         buttonText: "Learn More",
-        category: "Mobile App Development",
+        category: "Cloud-Based SaaS Solutions",
         images: [
             {
-                id: "mobile-1",
+                id: "saas-1",
                 src: "/images/products/representations-user-experience-interface-design.jpg",
-                alt: "Mobile App Development Services"
+                alt: "Cloud-Based SaaS Solutions"
             }
         ],
         autoplayDelay: 0
     },
     {
         id: "service-3",
-        title: "SERVER-SIDE SERVICES",
-        description: "Robust backend infrastructure and cloud-based server solutions. We ensure your applications are secure, scalable, and performant with enterprise-grade architecture.",
+        title: "ENTERPRISE-GRADE SOLUTIONS",
+        description: "Secure platforms that streamline operations for large organizations. We deliver enterprise-level solutions with advanced security, scalability, and compliance features.",
         buttonText: "Learn More",
-        category: "Server-side Services",
+        category: "Enterprise-Grade Solutions",
         images: [
             {
-                id: "server-1",
+                id: "enterprise-1",
                 src: "/images/products/data-server-racks-hub-room-with-big-data-computer-center-blue-interior-hosting-storage-hardware.jpg",
-                alt: "Server-side Services"
+                alt: "Enterprise-Grade Solutions"
             }
         ],
         autoplayDelay: 0
     },
     {
         id: "service-4",
-        title: "CONSULTATION SERVICES",
-        description: "Expert technology consultation to transform your business vision. We provide strategic guidance, technical architecture, and implementation planning for your digital transformation.",
+        title: "CUSTOM SOFTWARE SOLUTIONS",
+        description: "Tailored tools for industry-specific requirements. We create bespoke software solutions that address unique business challenges and drive operational efficiency.",
         buttonText: "Learn More",
-        category: "Consultation Services",
+        category: "Custom Software Solutions",
         images: [
             {
-                id: "consultation-1",
+                id: "custom-1",
                 src: "/images/products/meeting-business-executives.jpg",
-                alt: "Consultation Services"
+                alt: "Custom Software Solutions"
+            }
+        ],
+        autoplayDelay: 0
+    },
+    {
+        id: "service-5",
+        title: "CONSULTING & SUPPORT",
+        description: "Ongoing guidance and maintenance to maximize ROI. We provide strategic consulting, technical support, and continuous optimization to ensure your technology investments deliver maximum value.",
+        buttonText: "Learn More",
+        category: "Consulting & Support",
+        images: [
+            {
+                id: "consulting-1",
+                src: "/images/products/29045.jpg",
+                alt: "Consulting & Support Services"
             }
         ],
         autoplayDelay: 0
