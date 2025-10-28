@@ -1,0 +1,80 @@
+{
+  "node": {
+    "00cb38f1484520f2ff6d12a01fef73af36402ad5d3": {
+      "workers": {
+        "app/(public)/page": {
+          "moduleId": "77369",
+          "async": false,
+          "exportedName": "getReviews",
+          "filename": "client/src/actions/review.action.ts"
+        }
+      },
+      "layer": {
+        "app/(public)/page": "rsc"
+      },
+      "exportedName": "getReviews",
+      "filename": "client/src/actions/review.action.ts"
+    },
+    "40728c023834f6269209ee957ced698e53c0993adc": {
+      "workers": {
+        "app/(public)/page": {
+          "moduleId": "77369",
+          "async": false,
+          "exportedName": "getReviewById",
+          "filename": "client/src/actions/review.action.ts"
+        }
+      },
+      "layer": {
+        "app/(public)/page": "rsc"
+      },
+      "exportedName": "getReviewById",
+      "filename": "client/src/actions/review.action.ts"
+    },
+    "40da861276c6a64eb93927f1636062d394f61315ea": {
+      "workers": {
+        "app/(public)/page": {
+          "moduleId": "77369",
+          "async": false,
+          "exportedName": "deleteReview",
+          "filename": "client/src/actions/review.action.ts"
+        }
+      },
+      "layer": {
+        "app/(public)/page": "rsc"
+      },
+      "exportedName": "deleteReview",
+      "filename": "client/src/actions/review.action.ts"
+    },
+    "40ffe55e8322b54999bb6a8c0ba1518213ce825cc7": {
+      "workers": {
+        "app/(public)/page": {
+          "moduleId": "77369",
+          "async": false,
+          "exportedName": "createReview",
+          "filename": "client/src/actions/review.action.ts"
+        }
+      },
+      "layer": {
+        "app/(public)/page": "rsc"
+      },
+      "exportedName": "createReview",
+      "filename": "client/src/actions/review.action.ts"
+    },
+    "609dfff62cb0afd50ec94d7753720d73fcbd208cbd": {
+      "workers": {
+        "app/(public)/page": {
+          "moduleId": "77369",
+          "async": false,
+          "exportedName": "updateReview",
+          "filename": "client/src/actions/review.action.ts"
+        }
+      },
+      "layer": {
+        "app/(public)/page": "rsc"
+      },
+      "exportedName": "updateReview",
+      "filename": "client/src/actions/review.action.ts"
+    }
+  },
+  "edge": {}
+}
