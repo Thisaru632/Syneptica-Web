@@ -14,7 +14,7 @@ export const SOCIAL_MEDIA = [
 ];
 
 export const CONTACT_INFO = {
-  email: "charith@synaptica.lk",
+  email: "info@synaptica.lk",
   phone: "+94715745632",
 };
 

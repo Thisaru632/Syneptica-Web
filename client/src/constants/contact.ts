@@ -14,7 +14,7 @@ export const CONTACT_INFO = [
   {
     icon: Mail,
     label: "Email",
-    value: "charith@synaptica.lk",
+    value: "info@synaptica.lk",
   },
 ];
 
